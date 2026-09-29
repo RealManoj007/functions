@@ -1,1 +1,39 @@
+name: "01 - Flask build test publish workflow"
+on:
+  push:
+    branches:
+      - main
+      - feature/*
+    paths:
+      - app/**
+      - .github/workflows/**
 
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+      - ready_for_review
+env:
+  APPLICATION_NAME: flask-app
+  DOCKER_USERNAME: ${{secrets.DOCKERHUB_USER}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
