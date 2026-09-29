@@ -19,7 +19,7 @@ on:
 env:
   APPLICATION_NAME: flask-app
   DOCKER_USERNAME: manojdograaa
-  DOCKER_PWD: ${{secrets.DOCKERHUB_TOKEN}}
+  DOCKER_PWD: ${{secrets.GITHUB_TOKEN}}
 
 jobs:
   flask-build-test-publish-job:
